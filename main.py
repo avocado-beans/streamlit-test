@@ -7,4 +7,6 @@ if image:
     st.image(image)
     with open ('img.jpg','wb') as file:
           file.write(image.getbuffer())
+    plantName = getPlant('img.jpg')
+    st.header(plantName)
 

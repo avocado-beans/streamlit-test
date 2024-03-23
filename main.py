@@ -1,6 +1,6 @@
 import streamlit as st
 from modules import *
-from streamlit_back_camera_input import back_camera_input
+from streamlit_bcp import back_camera_input
 
 image = back_camera_input()
 if image:

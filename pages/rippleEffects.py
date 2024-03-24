@@ -53,26 +53,26 @@ with right:
     st_data = st_folium(m, width=400)
        
 st.divider()
-question = "Q: How would introducing the plant species "+plantName+" to "+location[0]['city']+", "+location[0]['country']+" affect the region's ecosystem?"
+question = "How would introducing the plant species "+plantName+" to "+location[0]['city']+", "+location[0]['country']+" affect the region's ecosystem?"
 st.header(question)
 
 question = "Q: Does "+plantName+" have natural predators that live in "+location[0]['city']+", "+location[0]['country']+"?"
-st.subheader("Does the plant have natural predators in the area?")
+st.subheader("Q: Does the plant have natural predators in the area?")
 answer = askAI21(question+" \nA:")
 st.write(answer)
 
 question = "Q: Could a new population of "+plantName+" compete too much with the native flora of the region of "+location[0]['city']+", "+location[0]['country']+"?"
-st.subheader("Will it compete too much with the region's native flora?")
+st.subheader("Q: Will it compete too much with the region's native flora?")
 answer = askAI21(question+" \nA:")
 st.write(answer)
 
 question = "Q: Will "+plantName+" get sufficient nutrition from the area if it were planted in "+location[0]['city']+", "+location[0]['country']+"?"
-st.subheader("Will it get sufficient nutrition from the area?")
+st.subheader("Q: Will it get sufficient nutrition from the area?")
 answer = askAI21(question+" \nA:")
 st.write(answer)
 
 question = "Q: Will "+plantName+" be comfortable with the climate of "+location[0]['city']+", "+location[0]['country']+"?"
-st.subheader("Will it be comfortable with the region's climate")
+st.subheader("Q: Will it be comfortable with the region's climate")
 answer = askAI21(question+" \nA:")
 st.write(answer)
 

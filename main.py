@@ -10,9 +10,10 @@ st.sidebar.page_link("pages/rippleEffects.py", label="PREDICT EFFECTS", icon="�
 
 st.image("images/notahomeplant.png")
 st.header("using ai to save the 🌎, one 🌱 at a time", divider='green')
-st.write("**Drag in a pic' of a cool plant and see how it could affect different ecosystems!**")
 
 uploaded_file = st.file_uploader("Choose a file")
+st.write("**Drag in a pic' of a cool plant and see how it could affect different ecosystems!**")
+
 d = st.empty()
 if uploaded_file is not None:
     image = uploaded_file.getvalue()

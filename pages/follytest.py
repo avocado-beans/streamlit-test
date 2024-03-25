@@ -3,6 +3,8 @@ import streamlit as st
 import reverse_geocode
 from streamlit_folium import st_folium
 
+st.set_page_config(page_title="PLANTR | PICK A LOCATION", page_icon="🌿")
+
 st.sidebar.page_link("main.py", label="HOME", icon="🏠")
 st.sidebar.page_link("pages/scanPlant.py", label="SCAN A PLANT", icon="🌱")
 st.sidebar.page_link("pages/follytest.py", label="PICK A LOCATION", icon="🗺️")

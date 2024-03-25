@@ -8,11 +8,13 @@ st.sidebar.page_link("pages/scanPlant.py", label="SCAN A PLANT", icon="🌱")
 st.sidebar.page_link("pages/follytest.py", label="PICK A LOCATION", icon="🗺️")
 st.sidebar.page_link("pages/rippleEffects.py", label="PREDICT EFFECTS", icon="🌎")
 
-st.image("images/notahomeplant.png")
-st.header("using ai to save the 🌎, one 🌱 at a time", divider='green')
-
+st.image("images/notahomeplant(1).png")
+st.header("", divider='green')
+#Using AI to save the 🌎, one 🌱 at a time
+st.header("**Drag in a picture of a plant and see how it could affect different ecosystems!**")
+st.divider()
 uploaded_file = st.file_uploader("Choose a file")
-st.write("**Drag in a pic' of a cool plant and see how it could affect different ecosystems!**")
+
 
 d = st.empty()
 if uploaded_file is not None:
@@ -86,5 +88,4 @@ st.write("Well, that's a very good question. After all, tech isn't tech if it is
 st.divider()
 l, r = st.columns(2)
 with r:
-    st.caption("made with ❤️ by Estifanos Tolemariam")
-
+    st.caption("made with 💚 by Estifanos Tolemariam")

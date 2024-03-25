@@ -82,4 +82,4 @@ st.write(answer)
 st.divider()
 l, r = st.columns(2)
 with r:
-    st.caption("made with ❤️ by Estifanos Tolemariam")
+    st.caption("made with 💚 by Estifanos Tolemariam")

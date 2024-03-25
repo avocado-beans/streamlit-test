@@ -2,6 +2,9 @@ import streamlit as st
 from pages.modules import *
 from streamlit_back_camera_input import back_camera_input
 
+st.set_page_config(page_title="PLANTR | SCAN A PLANT", page_icon="🌿")
+
+
 st.sidebar.page_link("main.py", label="HOME", icon="🏠")
 st.sidebar.page_link("pages/scanPlant.py", label="SCAN A PLANT", icon="🌱")
 st.sidebar.page_link("pages/follytest.py", label="PICK A LOCATION", icon="🗺️")

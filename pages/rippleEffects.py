@@ -4,6 +4,9 @@ from pages.modules import *
 from streamlit_folium import st_folium
 import reverse_geocode
 
+st.set_page_config(page_title="PLANTR | PREDICT EFFECTS", page_icon="🌿")
+
+
 st.sidebar.page_link("main.py", label="HOME", icon="🏠")
 st.sidebar.page_link("pages/scanPlant.py", label="SCAN A PLANT", icon="🌱")
 st.sidebar.page_link("pages/follytest.py", label="PICK A LOCATION", icon="🗺️")

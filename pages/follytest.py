@@ -20,11 +20,8 @@ st.divider()
 left, right = st.columns([0.7, 0.3])
 
 m = folium.Map(location=[9.492408153765544, 38.84765625000001], zoom_start=9)
-folium.Marker(
-        [39.949610, -75.150282], popup="Liberty Bell", tooltip="Liberty Bell"
-    ).add_to(m)
 
-        # call to render Folium map in Streamlit
+# call to render Folium map in Streamlit
 st_data = st_folium(m, width=725)
 st.divider()
 left, right = st.columns(2)

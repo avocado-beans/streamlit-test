@@ -39,8 +39,53 @@ if uploaded_file is not None:
         st.write("**(Hint: Go to the sidebar and hit PICK LOCATION to pick the area you wanna see this plant placed.)**")
     with right:
         st.image("images/img.jpg")
-    st.divider()
+    st.divider()    
+    st.header(f"About {plantName[0]}:", divider='green')
+    pre_apiKey = "iZM0rbUN67u9PmtCMpaS0NyDY8gtXRNsKwK_-OIW-OE"
+
+    url = f"https://trefle.io/api/v1/plants/search?token={pre_apiKey}&q={plantName[0]}"
+
+    response = requests.get(url)
+    plantSpecies = json.loads(response.text)['data'][0]['slug']
+    plantDataURL = f"https://trefle.io/api/v1/species/{plantSpecies}?token={pre_apiKey}"
+    response = requests.get(plantDataURL)
+    plantData = json.loads(response.text)
+
+    df = pd.DataFrame({
+        "Native Locations": plantData['data']['distribution']['native']
+        })
+    df1 = pd.DataFrame({"Introduced to Locations": plantData['data']['distribution']['introduced']    
+        })
     
+    question = f"Q: Where does the plant species {plantName[0]} originate?"
+    st.subheader("Q: Where does the plant originate?")    
+    answer = askAI21(question+" \nA:")
+    st.write(answer)
+    st.table(df)
+    st.table(df)
+    
+    question = f"Q: What kind of climate does the plant species {plantName[0]} prefer?"
+    st.subheader("Q: What kind of climate does the plant prefer?")
+    
+    answer = askAI21(question+" \nA:")
+    st.write(answer)
+    
+    question = f"Q: What are the natural predators of the plant species {plantName[0]}?"
+    st.subheader("Q: What are the natural predators of the plant?")
+    
+    answer = askAI21(question+" \nA:")
+    st.write(answer)
+    
+    question = f"Q: What are the nutritional requirements of the plant species {plantName[0]}?"
+    st.subheader("Q: What are the nutritional requirements of the plant?")
+    st.write("Nutritional and growth data:")
+    leff, rye = st.columns(2)
+    with leff:
+        st.write(plantData['data']['growth'])
+    with rye:
+        st.write(plantData['data']['specifications'])
+    answer = askAI21(question+" \nA:")
+    st.write(answer)
     st.header(f"About {plantName[0]}:", divider='green')
     
     question = f"Q: Where does the plant species {plantName[0]} originate?"

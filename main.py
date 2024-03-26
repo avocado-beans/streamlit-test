@@ -85,8 +85,10 @@ if uploaded_file is not None:
     st.write("Nutritional and growth data:")
     leff, rye = st.columns(2)
     with leff:
+        st.("(work in progress...)")
         st.write(plantData['data']['growth'])
     with rye:
+        st.("(work in progress...)")
         st.write(plantData['data']['specifications'])
     answer = askAI21(question+" \nA:")
     st.write(answer)

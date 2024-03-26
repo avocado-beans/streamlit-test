@@ -86,8 +86,6 @@ with leff:
 with rye:
     st.write(plantData['data']['specifications'])
 
-
-
 question = "How would introducing the plant species "+plantName+" to "+location[0]['city']+", "+location[0]['country']+" affect the region's ecosystem?"
 st.header(question)
 

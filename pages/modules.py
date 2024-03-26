@@ -11,10 +11,10 @@ def askAI21(prompt):
     payload = {
         "prompt": prompt,
         "numResults": 1,
-        "maxTokens": 100,
+        "maxTokens": 50,
         "minTokens": 0,
         "temperature": 0.,
-        "topP": 1,
+        "topP": 0.,
         "topKReturn": 0,
         "frequencyPenalty": {
             "scale": 0,

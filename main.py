@@ -1,6 +1,9 @@
 from pages.modules import *
 import streamlit as st
 
+import requests
+import json
+
 st.set_page_config(page_title="PLANTR | USING AI TO SAVE THE 🌎, ONE 🌱 AT A TIME", page_icon="🌿")
 
 st.sidebar.page_link("main.py", label="HOME", icon="🏠")

@@ -13,6 +13,9 @@ from datetime import datetime
 from meteostat import Point, Monthly
 import numpy as np
 
+import requests
+import json
+
 st.set_page_config(page_title="PLANTR | PREDICT EFFECTS", page_icon="🌿")
 
 
@@ -64,6 +67,25 @@ with right:
             [coordinates[0][0], coordinates[0][1]], popup=location[0]['city'], tooltip=location[0]['city']).add_to(m)
     st_data = st_folium(m, width=400)
 st.divider()
+pre_apiKey = "iZM0rbUN67u9PmtCMpaS0NyDY8gtXRNsKwK_-OIW-OE"
+
+file = open("plntNM.txt", "r")
+plantName = file.read()
+
+url = f"https://trefle.io/api/v1/plants/search?token={pre_apiKey}&q={plantName}"
+
+response = requests.get(url)
+plantSpecies = json.loads(response.text)['data'][0]['slug']
+plantDataURL = f"https://trefle.io/api/v1/species/{plantSpecies}?token={pre_apiKey}"
+response = requests.get(plantDataURL)
+plantData = json.loads(response.text)
+
+leff, rye = st.columns(2)
+with leff:
+    st.write(plantData['data']['growth'])
+with rye:
+    st.write(plantData['data']['specifications'])
+
 
 
 question = "How would introducing the plant species "+plantName+" to "+location[0]['city']+", "+location[0]['country']+" affect the region's ecosystem?"

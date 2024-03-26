@@ -64,6 +64,9 @@ with right:
             [coordinates[0][0], coordinates[0][1]], popup=location[0]['city'], tooltip=location[0]['city']).add_to(m)
     st_data = st_folium(m, width=400)
 st.divider()
+start = datetime(2013, 1, 1)
+end = datetime(2023, 12, 31)
+
 st.header("Monthly temperature data for "+location[0]['city']+", "+location[0]['country']+" from the last 5 years. ")
 tpr = Point(coordinates[0][0], coordinates[0][1])
 # Get monthly data for 2022

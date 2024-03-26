@@ -2,6 +2,7 @@ from pages.modules import *
 import streamlit as st
 
 import requests
+import pandas as pd
 import json
 
 st.set_page_config(page_title="PLANTR | USING AI TO SAVE THE 🌎, ONE 🌱 AT A TIME", page_icon="🌿")

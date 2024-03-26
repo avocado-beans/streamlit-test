@@ -82,8 +82,10 @@ plantData = json.loads(response.text)
 
 leff, rye = st.columns(2)
 with leff:
+    st.("(work in progress...)")
     st.write(plantData['data']['growth'])
 with rye:
+    st.("(work in progress...)")
     st.write(plantData['data']['specifications'])
 
 question = "How would introducing the plant species "+plantName+" to "+location[0]['city']+", "+location[0]['country']+" affect the region's ecosystem?"

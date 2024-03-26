@@ -3,6 +3,15 @@ import folium
 from pages.modules import *
 from streamlit_folium import st_folium
 import reverse_geocode
+import streamlit as st
+import folium
+from pages.modules import *
+from streamlit_folium import st_folium
+import reverse_geocode
+import pandas as pd
+from datetime import datetime
+from meteostat import Point, Monthly
+import numpy as np
 
 st.set_page_config(page_title="PLANTR | PREDICT EFFECTS", page_icon="🌿")
 
@@ -54,7 +63,21 @@ with right:
     folium.Marker(
             [coordinates[0][0], coordinates[0][1]], popup=location[0]['city'], tooltip=location[0]['city']).add_to(m)
     st_data = st_folium(m, width=400)
-       
+st.divider()
+st.header("Monthly temperature data for "+location[0]['city']+", "+location[0]['country']+" from the last 5 years. ")
+tpr = Point(coordinates[0][0], coordinates[0][1])
+# Get monthly data for 2022
+data = Monthly(tpr, start, end)
+data = data.fetch()
+
+chart_data = pd.DataFrame(
+   {
+       "Max Temp 🔥": data['tmax'],
+       "Ave Temp 🏠": data['tavg'],
+       "Min Temp ❄️": data['tmin']
+   }
+)
+st.bar_chart(chart_data)
 st.divider()
 question = "How would introducing the plant species "+plantName+" to "+location[0]['city']+", "+location[0]['country']+" affect the region's ecosystem?"
 st.header(question)

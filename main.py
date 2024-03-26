@@ -82,8 +82,7 @@ if uploaded_file is not None:
 st.divider()
 st.header("why plantr?")
 st.write("Agriculture is a very dominant part of Ethiopia's economy, just like how it is with most other developing countries. We have recently started to use a more modern and technology-based approach when it comes to farming; and this project aims to play a part in that.  \n  \nPlantr is a project that combines a chatGPT-like LLM (AI21) and an image recognition API (Pl@ntNet) to first recognize and identify plants from pictures and then give the user information about how the plant can be taken care of, how it could be used, etc.")
-st.header("okay, but, like, what makes this cool?")
-st.write("Well, that's a very good question. After all, tech isn't tech if it isn't cool, right?  \n  \nAny how, the wow-factor of this cool little site is that you can use the LLM to sort-of roughly predict what kind of effect introducing a novel plant population would have on the ecosystem it joins. There's a map to choose co-ordinates and everything.  \n  \nI admit this approach is far from perfect, but I believe it paves the way towards using these AI models and API's in new and innovative ways.")
+st.write("The main feature of this site is that you can use the LLM to roughly predict what kind of effect introducing a novel plant population would have on the ecosystem it joins. There's a map to choose co-ordinates and everything.  \n  \nThis approach is far from perfect, but I believe it paves the way towards using these AI models and API's in new and innovative ways.")
     
 st.divider()
 l, r = st.columns(2)

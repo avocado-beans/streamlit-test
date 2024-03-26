@@ -75,9 +75,9 @@ data = data.fetch()
 
 chart_data = pd.DataFrame(
    {
-       "Max Temp 🔥": data['tmax'],
+       "Min Temp ❄️": data['tmin'],
        "Ave Temp 🏠": data['tavg'],
-       "Min Temp ❄️": data['tmin']
+       "Max Temp 🔥": data['tmax']
    }
 )
 st.bar_chart(chart_data)

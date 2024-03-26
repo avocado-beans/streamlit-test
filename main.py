@@ -90,31 +90,6 @@ if uploaded_file is not None:
         st.write(plantData['data']['specifications'])
     answer = askAI21(question+" \nA:")
     st.write(answer)
-    st.header(f"About {plantName[0]}:", divider='green')
-    
-    question = f"Q: Where does the plant species {plantName[0]} originate?"
-    st.subheader("Q: Where does the plant originate?")
-    
-    answer = askAI21(question+" \nA:")
-    st.write(answer)
-    
-    question = f"Q: What kind of climate does the plant species {plantName[0]} prefer?"
-    st.subheader("Q: What kind of climate does the plant prefer?")
-    
-    answer = askAI21(question+" \nA:")
-    st.write(answer)
-    
-    question = f"Q: What are the natural predators of the plant species {plantName[0]}?"
-    st.subheader("Q: What are the natural predators of the plant?")
-    
-    answer = askAI21(question+" \nA:")
-    st.write(answer)
-    
-    question = f"Q: What are the nutritional requirements of the plant species {plantName[0]}?"
-    st.subheader("Q: What are the nutritional requirements of the plant?")
-    
-    answer = askAI21(question+" \nA:")
-    st.write(answer)
     
     question = f"Q: How can the plant species {plantName[0]} be used for human benefit?"
     st.subheader("Q: How can I use this plant?")

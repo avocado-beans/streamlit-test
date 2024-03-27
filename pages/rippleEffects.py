@@ -91,8 +91,8 @@ with rye:
 question = "How would introducing the plant species "+plantName+" to "+location[0]['city']+", "+location[0]['country']+" affect the region's ecosystem?"
 st.header(question)
 
-question = "Q: Does "+plantName+" have natural predators that live in "+location[0]['city']+", "+location[0]['country']+"?"
-st.subheader("Q: Does the plant have natural predators in the area?")
+question = f"Q: Are there any organisms that pose a threat to the plant {plantName} in the esosystem of {location[0]['city']}, {location[0]['country']}?"
+st.subheader("Q: Are there any organisms that pose a threat to the plant in the area?")
 answer = askAI21(question+" \nA:")
 st.write(answer)
 

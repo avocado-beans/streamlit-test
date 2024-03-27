@@ -74,8 +74,8 @@ if uploaded_file is not None:
     answer = askAI21(question+" \nA:")
     st.write(answer)
     
-    question = f"Q: What are the natural predators of the plant species {plantName[0]}?"
-    st.subheader("Q: What are the natural predators of the plant?")
+    question = f"Q: What are some natural dangers to the plant species {plantName[0]}?"
+    st.subheader("Q: What are some natural dangers to the plant?")
     
     answer = askAI21(question+" \nA:")
     st.write(answer)

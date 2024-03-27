@@ -96,7 +96,7 @@ st.subheader("Q: Are there any organisms that pose a threat to the plant in the 
 answer = askAI21(question+" \nA:")
 st.write(answer)
 
-question = "Q: Could a new population of "+plantName+" compete too much with the native flora of the region of "+location[0]['city']+", "+location[0]['country']+"?"
+question = f"Q: Would a new population of "+plantName+" compete too much with the native flora of "+location[0]['city']+", "+location[0]['country']+"?"
 st.subheader("Q: Will it compete too much with the region's native flora?")
 answer = askAI21(question+" \nA:")
 st.write(answer)

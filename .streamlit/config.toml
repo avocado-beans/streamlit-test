@@ -2,3 +2,6 @@
 
 showSidebarNavigation = false
 toolbarMode = "viewer"
+
+[theme]
+base="dark"

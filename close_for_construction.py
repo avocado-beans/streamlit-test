@@ -2,6 +2,7 @@ import streamlit as st
 import streamlit_lottie
 
 st.header(":green[PLANTR] is temporarily down for maintainance!", divider='green')
+st.divider()
 st.subheader("**I'm modifying it until the day of the contest so it'll be down for a few days.**")
 st.write("**Thanks for visiting the site, though! Trust me, this project will not disappoint :)**")
 st.write("**I'm @tae2big on instagram if you want to contact me until then.**")

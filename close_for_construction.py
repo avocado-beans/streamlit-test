@@ -8,12 +8,8 @@ st.write("I'm @tae2big on instagram if you want to contact me until then.")
 st.divider()
 st.image("images/farm.jpg")
 st.divider()
-left, right = st.columns(2)
-with right:
-  st.header("Q: What is PLANTR?", divider='green')
-  st.write("Agriculture is a very dominant part of Ethiopia's economy, just like how it is with most other developing countries. We have recently started to use a more modern and technology-based approach when it comes to farming; and this project aims to play a part in that.  \n  \nPlantr is a project that combines a chatGPT-like LLM (AI21), an image recognition API (Pl@ntNet) and geo-spatial technology to first recognize and identify plants from pictures and then give the user information about how the plant can be taken care of, how it could be used, etc. And then it gives analysis on how the addition of that species to a novel ecosystem could affect said ecosystem.")
-with left:
-  code = '''def plantr(_ecosystem):
+st.header("Q: What is PLANTR?", divider='green')
+code = '''def plantr(_ecosystem):
     for _organism in _ecosystem():
         for _other_organism in _ecosystem:
             if _compatible_:
@@ -30,7 +26,10 @@ def save_earth():
         org.plantr(eco_observations)
     
     return A_BETTER_EARTH'''
-  st.code(code)
+st.code(code)
+st.write("Agriculture is a very dominant part of Ethiopia's economy, just like how it is with most other developing countries. We have recently started to use a more modern and technology-based approach when it comes to farming; and this project aims to play a part in that.  \n  \nPlantr is a project that combines a chatGPT-like LLM (AI21), an image recognition API (Pl@ntNet) and geo-spatial technology to first recognize and identify plants from pictures and then give the user information about how the plant can be taken care of, how it could be used, etc. And then it gives analysis on how the addition of that species to a novel ecosystem could affect said ecosystem.")
+
+
   
 st.divider()
 left, right = st.columns(2)

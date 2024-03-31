@@ -33,16 +33,16 @@ def save_earth():
     # outcome
     return A_BETTER_EARTH'''
 st.code(code)
-st.caption("(This is pseudo-code to illustrate very loosely how this works.)")
-st.write(":green[_Agriculture_] is a very dominant part of Ethiopia's economy, just like how it is with most other developing countries. We have recently started to use a more modern and technology-based approach when it comes to farming; and this project aims to play a part in that.  \n  \n:green[Plantr] is a project that combines a chatGPT-like LLM (AI21), an image recognition API (Pl@ntNet) and geo-spatial technology to first recognize and identify plants from pictures and then give the user information about how the plant can be taken care of, how it could be used, etc. And then it gives analysis on how the addition of that species to a novel ecosystem could affect said ecosystem.")
+st.caption("**(This is pseudo-code to illustrate very loosely how this works.)**")
+st.write(":green[**Agriculture**] **is a very dominant part of Ethiopia's economy, just like how it is with most other developing countries. We have recently started to use a more modern and technology-based approach when it comes to farming; and this project aims to play a part in that.  \n  \n:green[Plantr] is a project that combines a chatGPT-like LLM (AI21), an image recognition API (Pl@ntNet) and geo-spatial technology to first recognize and identify plants from pictures and then give the user information about how the plant can be taken care of, how it could be used, etc. And then it gives analysis on how the addition of that species to a novel ecosystem could affect said ecosystem.**")
 
 st.divider()
 st.header("_Q: Why?_")
 st.divider()
-st.write("The goal is to make software that can be used not only to protect and save ecosystems, but to :green[**enhance**] them, make them :green[**stronger**] and more :green[**efficient.**] It's based on the (almost-baseless, I admit) assumption that nature doesn't need to be constantly bombarded with fertilizers or 'care and protection' procedures (such as terracing or drone-watering) in order to yield food long-term. ")
-st.write(":green[**Ecosystems can fully sustain themselves**] while also providing abundant food, but only if the organisms that consitute them :green[**interact with each other in very specific ways.**]")
-st.write("By analyzing climate, geo-location and plant growth requirement data and using it to :green[**simulate**] how selected food crops and plants would interact with each other and their environment, we can manage our farms more efficiently while making them low-maintainance, and :green[**eliminate the need for invasive human action.**] Thus making food :green[**healthier, cheaper**] and basically :green[**saving the Earth**] in the process.")
-st.write(":green[_It's a long shot, but I think we can make it. Any support would help a lot._**]")
+st.write("**The goal is to make software that can be used not only to protect and save ecosystems, but to :green[**enhance**] them, make them :green[**stronger**] and more :green[**efficient.**] It's based on the (almost-baseless, I admit) assumption that nature doesn't need to be constantly bombarded with fertilizers or 'care and protection' procedures (such as terracing or drone-watering) in order to yield food long-term.**")
+st.write(":green[**Ecosystems can fully sustain themselves**] **while also providing abundant food, but only if the organisms that consitute them** :green[**interact with each other in very specific ways.**]")
+st.write("**By analyzing climate, geo-location and plant growth requirement data and using it to :green[**simulate**] how selected food crops and plants would interact with each other and their environment, we can manage our farms more efficiently while making them low-maintainance, and :green[**eliminate the need for invasive human action.**] Thus making food :green[**healthier, cheaper**] and basically :green[**saving the Earth**] in the process.**")
+st.write("**:green[_It's a long shot, but I think we can make it. Any support would help a lot._]**")
 st.divider()
 st.header("_that's the future we're headed for..._")
 st.divider()

@@ -47,7 +47,7 @@ st.write(":green[**Ecosystems can fully sustain themselves**] **while also provi
 st.write("**By analyzing climate, geo-location and plant growth requirement data and using it to :green[**simulate**] how selected food crops and plants would interact with each other and their environment, we can manage our farms more efficiently while making them low-maintainance, and :green[**eliminate the need for invasive human action.**] Thus making food :green[**healthier, cheaper**] and basically :green[**saving the Earth**] in the process.**")
 st.write("**:green[_It's a long shot, but I think we can make it. Any support would help a lot._]**")
 st.divider()
-st.header("_that's the future we're headed for..._")
+st.header("_That's the future we're headed for..._")
 st.divider()
 st.image("images/lab.jpg")
 left, right = st.columns(2)

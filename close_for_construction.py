@@ -3,7 +3,7 @@ import streamlit_lottie
 
 st.set_page_config(page_title="Closed For Construction | Plantr.", page_icon="🌿")
 
-st.title("Super sorry, dude! :green[Plantr] is temporarily down for :green[maintainance] and :green[development!]")
+st.title("Super sorry, dude! 😿 :green[Plantr] is temporarily down for :green[maintainance] and :green[development!] 🛠️")
 st.lottie("https://lottie.host/84c0c93b-2d47-4441-8a72-3802742681df/2MjzLbcImk.json")
 st.divider()
 st.subheader("**I'm modifying it until the day of the contest so it'll be down for a few days.**")

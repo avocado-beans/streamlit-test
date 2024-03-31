@@ -1,8 +1,7 @@
 import streamlit as st
 import streamlit_lottie
 
-st.caption("Made with (Platonic) Love, E. Tolemariam")
-st.divider()
+st.caption("**Made with (Platonic) Love, E. Tolemariam**")
 st.title("Super sorry, dude! :green[Plantr] is temporarily down for maintainance and development!")
 st.lottie("https://lottie.host/84c0c93b-2d47-4441-8a72-3802742681df/2MjzLbcImk.json")
 st.divider()
@@ -59,4 +58,4 @@ with right:
 st.divider()
 left, right = st.columns(2)
 with right:
-  st.caption("Made with (Platonic) Love, E. Tolemariam")
+  st.caption("**Made with (Platonic) Love, E. Tolemariam**")

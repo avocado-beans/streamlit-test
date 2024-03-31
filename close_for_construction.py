@@ -48,6 +48,7 @@ st.write("**By analyzing climate, geo-location and plant growth requirement data
 st.write("**:green[_It's a long shot, but I think we can make it. Any support would help a lot._]**")
 st.divider()
 st.header("_That's the future we're headed for..._")
+st.divider()
 st.image("images/lab.jpg")
 left, right = st.columns(2)
 with right:

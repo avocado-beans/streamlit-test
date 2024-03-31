@@ -7,7 +7,7 @@ st.title("Super sorry, dude! :green[Plantr] is temporarily down for :green[maint
 st.lottie("https://lottie.host/84c0c93b-2d47-4441-8a72-3802742681df/2MjzLbcImk.json")
 st.divider()
 st.subheader("**I'm modifying it until the day of the contest so it'll be down for a few days.**")
-st.subheader("**Thanks for visiting the site, though! Trust me, this project will not disappoint :)**")
+st.subheader("**Thanks for visiting the site, though! Trust me, this project will not disappoint. :)**")
 st.subheader("**I'm [@tae2big](https://www.instagram.com/tae2big/) on instagram and [@avocado-beans](https://github.com/avocado-beans) on github if you want to contact me for some reason.**")
 st.divider()
 st.header("Q: But until then, _what is :green[plantr?]_")

@@ -15,12 +15,22 @@ with right:
 with left:
   st.lottie("https://lottie.host/6f984d1b-8857-4e15-b782-c5ea6db42352/pEyt6cbe53.json")
 st.divider()
-st.subheader("Q: Why?")
-st.write("The goal is to make software that can be used not only to protect and save ecosystems, but to enhance them, make them stronger and more efficient. It's based on the (almost-baseless, I admit) assumption that nature doesn't need to be constantly bombarded with fertilizers or 'care and protection' procedures (such as terracing or drone-watering) in order to yield food long-term. Ecosystems can fully sustain themselves while also providing abundant food, but only if the organisms that consitute them interact with each other in very specific ways. By analyzing climate, geo-location and plant growth requirement data and using it to simulate how selected food crops and plants would interact with each other and their environment, we can manage our farms more efficiently while making them low-maintainance, and eliminate the need for invasive human action. Thus making food healthier, cheaper and basically saving the Earth in the process.")
-st.write("It's a long shot, but I think we can make it. Any support would help a lot.")
+left, right = st.columns(2)
+with right:
+  st.lottie("https://lottie.host/43c9c9d4-94f6-4ce2-b652-9d3ccff533b0/gPLImv5Aoy.json")
+with left:
+  st.header("Q: Why?", divider='green')
+  st.write("The goal is to make software that can be used not only to protect and save ecosystems, but to enhance them, make them stronger and more efficient. It's based on the (almost-baseless, I admit) assumption that nature doesn't need to be constantly bombarded with fertilizers or 'care and protection' procedures (such as terracing or drone-watering) in order to yield food long-term. ")
+  st.write("Ecosystems can fully sustain themselves while also providing abundant food, but only if the organisms that consitute them interact with each other in very specific ways. ")
+  st.write("By analyzing climate, geo-location and plant growth requirement data and using it to simulate how selected food crops and plants would interact with each other and their environment, we can manage our farms more efficiently while making them low-maintainance, and eliminate the need for invasive human action. Thus making food healthier, cheaper and basically saving the Earth in the process.")
+  st.write("It's a long shot, but I think we can make it. Any support would help a lot.")
 st.divider()
+st.header("_that's_ the future we're headed for...")
 st.image("images/lab.jpg")
+left, right = st.columns(2)
+with right:
+  st.header("..._that's_ PLANTR.")
 st.divider()
 left, right = st.columns(2)
 with right:
-  st.caption("(Platonic) Love, E. Tolemariam")
+  st.caption("Made with (Platonic) Love, E. Tolemariam")

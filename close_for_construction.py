@@ -45,11 +45,11 @@ st.write("Ecosystems can fully sustain themselves while also providing abundant 
 st.write("By analyzing climate, geo-location and plant growth requirement data and using it to simulate how selected food crops and plants would interact with each other and their environment, we can manage our farms more efficiently while making them low-maintainance, and eliminate the need for invasive human action. Thus making food healthier, cheaper and basically saving the Earth in the process.")
 st.write("_It's a long shot, but I think we can make it. Any support would help a lot._")
 st.divider()
-st.header("**that's** the future we're headed for...")
+st.header("_that's** the future we're headed for..._")
 st.image("images/lab.jpg")
 left, right = st.columns(2)
 with right:
-  st.header("...**that's** :green[PLANTR.]")
+  st.header("..._that's_ :green[_PLANTR._]")
 st.divider()
 left, right = st.columns(2)
 with right:

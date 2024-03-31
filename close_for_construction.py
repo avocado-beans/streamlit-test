@@ -57,10 +57,7 @@ left, right = st.columns(2)
 with right:
   st.header("..._that's_ :green[_plantr._]")
 st.divider()
-st.subheader("A research paper that explains the motivation of the project in a more educated manner:")
-with open('mcg041.pdf') as f:
-   st.download_button("Download 'Effects of Plant Traits on Ecosystem and Regional Processes: a Conceptual Framework for Predicting the Consequences of Global Change'", f)  
-st.divider()
+st.subheader("Here's [a research paper]('https://academic.oup.com/aob/article-pdf/91/4/455/563843/mcg041.pdf') that explains the motivation of the project in a more educated and professional manner.")
 left, right = st.columns(2)
 with right:
   st.caption("**Made with (Platonic) Love, E. Tolemariam**")

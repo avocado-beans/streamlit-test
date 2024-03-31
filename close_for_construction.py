@@ -50,7 +50,6 @@ st.divider()
 st.header("_That's the future we're headed for..._")
 st.divider()
 st.image("images/lab.jpg")
-st.divider()
 left, right = st.columns(2)
 with right:
   st.header("..._that's_ :green[_plantr._]")

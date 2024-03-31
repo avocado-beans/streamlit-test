@@ -34,7 +34,8 @@ def save_earth():
     return A_BETTER_EARTH'''
 st.code(code)
 st.caption("**(This is pseudo-code to illustrate very loosely how this works.)**")
-st.write(":green[**Agriculture**] **is a very dominant part of Ethiopia's economy, just like how it is with most other developing countries. We have recently started to use a more modern and technology-based approach when it comes to farming; and this project aims to play a part in that.  \n  \n:green[Plantr] is a project that combines a chatGPT-like LLM (AI21), an image recognition API (Pl@ntNet) and geo-spatial technology to first recognize and identify plants from pictures and then give the user information about how the plant can be taken care of, how it could be used, etc. And then it gives analysis on how the addition of that species to a novel ecosystem could affect said ecosystem.**")
+st.write(":green[**Agriculture**] **is a very dominant part of Ethiopia's economy, just like how it is with most other developing countries. We have recently started to use a more modern and technology-based approach when it comes to farming; and this project aims to play a part in that.**)
+st.write(":green[Plantr] **is a project that combines a chatGPT-like LLM (AI21), an image recognition API (Pl@ntNet) and geo-spatial technology to first recognize and identify plants from pictures and then give the user information about how the plant can be taken care of, how it could be used, etc. And then it gives analysis on how the addition of that species to a novel ecosystem could affect said ecosystem.**")
 
 st.divider()
 st.header("_Q: Why?_")

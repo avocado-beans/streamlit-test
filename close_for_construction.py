@@ -38,7 +38,7 @@ def save_earth():
 st.code(code)
 st.caption("**(The above is pseudo-code for decoration purposes. It's not supposed to make sense.)**")
 st.write(":green[**Agriculture**] **is a very dominant part of Ethiopia's economy, just like how it is with most other developing countries. We have recently started to implement a more modern and technology-based approach when it comes to farming; and this project aims to play a part in that.**")
-st.write(":green[**Plantr**] **is a project that combines a chatGPT-like LLM ([AI21]('https://docs.ai21.com/')), an image recognition API ([Pl@ntNet]('https://my.plantnet.org/doc/openapi')) and [geo-spatial technology]('https://pypi.org/project/reverse-geocode/') to first recognize and identify plants from pictures and then give the user information about how the plant can be taken care of, how it could be used, etc. And then it gives analysis on how the addition of that species to a :green[novel ecosystem] could affect said ecosystem.**")
+st.write(":green[**Plantr**] **is a project that combines a chatGPT-like LLM ([AI21](https://docs.ai21.com)), an image recognition API ([Pl@ntNet](https://my.plantnet.org/doc/openapi)) and [geo-spatial technology](https://pypi.org/project/reverse-geocode) to first recognize and identify plants from pictures and then give the user information about how the plant can be taken care of, how it could be used, etc. And then it gives analysis on how the addition of that species to a :green[novel ecosystem] could affect said ecosystem.**")
 
 st.divider()
 st.header("_Q: Why :green[plantr?]_")
@@ -57,7 +57,7 @@ left, right = st.columns(2)
 with right:
   st.header("..._that's_ :green[_plantr._]")
 st.divider()
-st.subheader("Here's [a research paper]('https://academic.oup.com/aob/article-pdf/91/4/455/563843/mcg041.pdf') that explains the motivation of the project in a more educated and professional manner.")
+st.subheader("Here's [a research paper](https://academic.oup.com/aob/article-pdf/91/4/455/563843/mcg041.pdf) that explains the motivation of the project in a more educated and professional manner.")
 left, right = st.columns(2)
 with right:
   st.caption("**Made with (Platonic) Love, E. Tolemariam**")

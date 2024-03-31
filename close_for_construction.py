@@ -15,10 +15,10 @@ st.divider()
 code = '''def plantr(_ecosystem):
     for _organism in _ecosystem():
         # check if organism is compatible with others
-        for _other_organism in _ecosystem:
+        for _other_organism in _ecosystem():
             if _compatible_:
                 return WILL_CO_EXIST
-            if not _compatible:
+            if not _compatible_:
                 # "co-species" to add to make the organisms co-operate 
                 return _co_species(_organism, _other_organism).json()
 

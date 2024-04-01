@@ -47,7 +47,7 @@ st.write("**If you're talking about the name, I genuinely have no clue. It was a
 st.write("**But the goal is to make software that can be used not only to save and protect ecosystems, but to :green[**enhance**] them, make them :green[**stronger**] and more :green[**efficient.**] It's based on the (almost-baseless, I admit) assumption that nature doesn't need to be constantly bombarded with :red[fertilizers] or :red['care and protection'] procedures (such as terracing or drone-watering) in order to yield food long-term.**")
 st.subheader(":green[**_Ecosystems can fully sustain themselves while also providing abundant food, but only if the organisms that consitute them interact with each other in very specific ways._**]")
 st.write("**By analyzing climate, geo-location and plant growth requirement data and using it to :green[**simulate**] how selected food crops and plants would interact with each other and their environment, we can manage our farms more efficiently while making them low-maintainance, and :green[**eliminate the need for invasive human action.**] Thus making food :green[**healthier, cheaper**] and basically :green[**saving the Earth**] in the process.**")
-st.subheader("**_It's a long shot, but I genuinely believe :green[we can make it.]_**")
+st.subheader("**_It's a long shot, but I truly believe it can :green[make a difference.]_**")
 st.divider()
 st.header("_That's the future we're headed for..._")
 st.divider()
